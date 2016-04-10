@@ -1,7 +1,7 @@
 [{
   "brend": "Alfa Romeo",
   "model": "MiTo",
-  "price": 9450,
+  "price": 5000,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -21,7 +21,7 @@
 }, {
   "brend": "Audi",
   "model": "MiTo",
-  "price": 9450,
+  "price": 8585,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -41,7 +41,7 @@
 }, {
   "brend": "BMW",
   "model": "MiTo",
-  "price": 9450,
+  "price": 12555,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -61,7 +61,7 @@
 }, {
   "brend": "Chevrolet",
   "model": "MiTo",
-  "price": 9450,
+  "price": 20555,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -81,7 +81,7 @@
 }, {
   "brend": "Citroen",
   "model": "MiTo",
-  "price": 9450,
+  "price": 7777,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -101,7 +101,7 @@
 }, {
   "brend": "Fiat",
   "model": "MiTo",
-  "price": 9450,
+  "price": 14777,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -121,7 +121,7 @@
 }, {
   "brend": "Ford",
   "model": "MiTo",
-  "price": 9450,
+  "price": 1888,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -141,7 +141,7 @@
 }, {
   "brend": "Honda",
   "model": "MiTo",
-  "price": 9450,
+  "price": 23555,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -161,7 +161,7 @@
 }, {
   "brend": "Hyundai",
   "model": "MiTo",
-  "price": 9450,
+  "price": 5444,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -181,7 +181,7 @@
 }, {
   "brend": "Infiniti",
   "model": "MiTo",
-  "price": 9450,
+  "price": 15450,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
@@ -201,7 +201,7 @@
 }, {
   "brend": "Kia",
   "model": "MiTo",
-  "price": 9450,
+  "price": 11111,
   "url": "photos/1.jpg",
   "year": 2010,
   "mileage": "139 087",
