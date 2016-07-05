@@ -1,0 +1,56 @@
+doctype html
+html(lang="ru")
+	head
+		title= pageTitle111
+		meta(charset="utf-8")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1")
+		link(rel="stylesheet", href="css/common.css")
+		link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic", type='text/css')
+	body
+- var movieList = []
+- movieList.push({title: "Сделать список мечт", descr: "Сделать сайт на котором будут размещен список всех моих целей. При нажатии на карточку, можно посмотреть подробности. В дальнейшем, можно будет регаться другим юзерам и создавать свои списки.", tags: "Путешествия", pic1: "screenDream.jpg", banner: "0"})
+- movieList.push({title: "Пройти под парусами во фьордах", descr: "Пока нет описания", tags: "Путешествия", pic1: "sailing.jpg", banner: "0"})
+- movieList.push({title: "Найти ДМ", descr: "Пока нет описания", tags: "Личное", pic1: "image-not-found.jpg", banner: "1"})
+- movieList.push({title: "Сделать видео-клип о походе под парусом", descr: "Пока нет описания", tags: "Развитие", pic1: "video.jpg", banner: "0"})
+- movieList.push({title: "Вспомнить, как играть в хоккей", descr: "Пока нет описания", tags: "Развитие", pic1: "hockey.jpg", banner: "0"})
+- movieList.push({title: "ДМ + шаурма!", descr: "Пока нет описания", tags: "Личное", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Потусить с пингвинчиками в Антарктиде", descr: "Пока нет описания", tags: "Путешествия", pic1: "ping.jpg", banner: "0"})
+- movieList.push({title: "Увидеть кошалота(а надо ли?)", descr: "Пока нет описания", tags: "Путешествия", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Подружиться с енотом", descr: "Пока нет описания", tags: "Путешествия", pic1: "enot.jpg", banner: "0"})
+- movieList.push({title: "Поплавать ночью в океане со светящимся планктоном", descr: "Пока нет описания", tags: "Путешествия", pic1: "flur.jpg", banner: "0"})
+- movieList.push({title: "Провести ночь в горах смотря на яркие звезды у костра", descr: "Пока нет описания", tags: "Путешествия", pic1: "nightInMounain.jpg", banner: "0"})
+- movieList.push({title: "Полетать на воздушном шаре во время какого-нибудь массового фестиваля воздушных шаров", descr: "Пока нет описания", tags: "Путешествия", pic1: "balloon.jpg", banner: "0"})
+- movieList.push({title: "Побывать на Burning Man", descr: "Пока нет описания", tags: "5 967 000", pic1: "burningMan.jpg", banner: "0"})
+- movieList.push({title: "Прокатиться на каком-нибудь супер-каре или просто заряженном новом мерсе", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Посерфить на зеленых волнах", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Попробовать эффект кой-чего", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Прокатиться где-нибудь в Финляндии на упряжке с хаски", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Увидеть яркое северное сияние", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Прожить хотя бы месяц в совсем чужой стране", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Полетать с реактивным ранцем", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Сделать проект, который помогает нуждающимся людям", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+- movieList.push({title: "Сервис, который помогает изучать джаваскрипт", descr: "Зеркальная, 18 Мп 1.6 crop, с объективом F3.5-5.6 18-55 мм, экран 3\", видоискатель оптический", tags: "5 967 000", pic1: "image-not-found.jpg", banner: "0"})
+
+
+mixin cardMixin(cardItem)
+	if cardItem.banner<1
+		li.card
+			a.card__link(href="#")
+				img.card__img(src="img/pic/" + cardItem.pic1, alt=cardItem.title)
+				h2.card__title=cardItem.title
+				.card__descr=cardItem.descr
+				.card__tags #[.card__tag=cardItem.tags]
+	else
+		li.card
+			a.card__link(href="#")
+			img.card__img.card__img--banner(src="img/pic/" + cardItem.pic1, alt=cardItem.title)
+			h2.card__title=cardItem.title
+			.card__tags #[.card__tag=cardItem.tags]
+
+main.main
+	.wrapper
+		.filters
+		ul.catalog
+			for cardItem in movieList
+				+cardMixin(cardItem)
