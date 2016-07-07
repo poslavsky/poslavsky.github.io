@@ -10,6 +10,7 @@ html
 body {
   font-family: 'Roboto', 'Arial', sans-serif;
   font-size: 24px;
+  background: #f2f2f2;
 }
 .wrapper {
   max-width: 1170px;
@@ -32,35 +33,37 @@ body {
 	justify-content: flex-start;
 	padding-left: 0;
 	width: 100%;
-
 }
 .card {
 	display: flex;
 	flex-direction: column;
 	list-style: none;
-	width: 25%;
-	border-right: 1px solid @c-gray;
-	border-bottom: 1px solid @c-gray;
-	padding: 10px;
+	width: calc(~'25% - (10px)');
+	margin-bottom: 10px;
+	margin-right: 10px;
+
+  background: #fff;
+  border-radius: 5px;
 	&:nth-child(4n) {
-		border-right: none;
+		margin-right: 0;
 	}
 	@media @tablet {
 		width: 33.33%;
+    width: calc(~'33.33% - (10px)');
 		&:nth-child(4n) {
-			border-right: 1px solid @c-gray;
+			margin-right: 10px;
 		}
 		&:nth-child(3n) {
-			border-right: none;
+			margin-right: 0;
 		}
 	}
 	@media @mobile {
-		width: 50%;
+    width: calc(~'50% - (10px * 1)');
 		&:nth-child(2n) {
-			border-right: none;
+			margin-right: 0;
 		}
 		&:nth-child(3n) {
-			border-right: 1px solid @c-gray;
+			margin-right: 10px;
 		}
 	}
 	@media @mobile-small {
@@ -75,12 +78,15 @@ body {
 		font-size: 18px;
 		line-height: 22px;
 		font-weight: 500;
+    padding: 0 10px;
 	}
 	&__descr {
 		color: #999;
 		font-size: 14px;
 		line-height: 18px;
 		font-weight: 400;
+    padding: 0 10px;
+    padding-bottom: 5px;
 	}
 	&__tags {
 		display: flex;
@@ -90,7 +96,8 @@ body {
 		color: @c-blue;
 		font-weight: 500;
 		height: 38px;
-
+    border-top: 1px solid rgb(231, 231, 231);
+    padding: 5px 10px;
 	}
 	&__tag {
 		font-size: 14px;
@@ -101,8 +108,19 @@ body {
 		line-height: 22px;
     border-radius: 3px;
 	}
+  &__img-wrapper {
+    position: relative;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    height: 210px;
+	}
 	&__img {
-		width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    min-width: 100%;
+height: 210px;
 
+    border-bottom: 1px solid rgb(231, 231, 231);
 	}
 }
