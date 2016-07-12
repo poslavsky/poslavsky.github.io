@@ -387,6 +387,11 @@ body {
   width: 100%;
 }
 .card {
+<<<<<<< HEAD
+=======
+  display: flex;
+  flex-direction: column;
+>>>>>>> aa435cf6fd95aa9fe80a9265e38953701d66c611
   list-style: none;
   width: calc(25% - (10px));
   margin-bottom: 10px;
