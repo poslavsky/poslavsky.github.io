@@ -1,5 +1,5 @@
 'use strict';
-<<<<<<< HEAD
+
 (function() {
 	var container = document.querySelector('.catalog');
 	var templateElement = document.querySelector('#template');
@@ -45,7 +45,6 @@
 		renderItems(itemsList);
 	})
 })();
-=======
 
 (function() {
 	var container = document.querySelector('.catalog');
@@ -99,4 +98,3 @@
     container.appendChild(fragment);
   }
 });
->>>>>>> aa435cf6fd95aa9fe80a9265e38953701d66c611
