@@ -4,17 +4,21 @@
 	var container = document.querySelector('.catalog');
 	var tamplate = document.querySelector('#template');
 	var jsonData = [];
+
 	function getData() {
+		console.log('111');
 		var xhr = new XMLHttpRequest();
 		xhr.onloadstart = function() {
       container.classList.add('pictures-loading');
-			xhr.open('GET', '//poslavsky.github.io/content.json');
+
     };
+		xhr.open('GET', '//poslavsky.github.io/content.json');
 		xhr.onload = function(e) {
       container.classList.remove('pictures-loading');
       var rawData = e.target.response;
       var loadedPictures = JSON.parse(rawData);
       parseData = loadedPictures;
+			console.log(rawData);
       renderPictures(loadedPictures);
     };
 		xhr.send();
@@ -25,7 +29,9 @@
     xhr.ontimeout = function() {
       container.classList.add('pictures-failure');
     };
-	}
+	};
+
+	getData();
 
 	function getElementFromTamplate(data) {
 		var element;
@@ -51,4 +57,4 @@
     });
     container.appendChild(fragment);
   }
-});
+})();
