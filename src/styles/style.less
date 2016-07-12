@@ -35,8 +35,6 @@ body {
 	width: 100%;
 }
 .card {
-	display: flex;
-	flex-direction: column;
 	list-style: none;
 	width: calc(~'25% - (10px)');
 	margin-bottom: 10px;
@@ -59,18 +57,16 @@ body {
 	}
 	@media @mobile {
     width: calc(~'50% - (10px * 1)');
-		&:nth-child(2n) {
-			margin-right: 0;
-		}
-		&:nth-child(3n) {
-			margin-right: 10px;
-		}
+		margin-right: 0;
 	}
 	@media @mobile-small {
 		width: 100%;
 	}
 
 	&__link {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
 		text-decoration: none;
 	}
 	&__title {
@@ -95,9 +91,9 @@ body {
 		font-size: 18px;
 		color: @c-blue;
 		font-weight: 500;
-		height: 38px;
     border-top: 1px solid rgb(231, 231, 231);
-    padding: 5px 10px;
+    padding: 10px 10px;
+		margin-top: auto;
 	}
 	&__tag {
 		font-size: 14px;
